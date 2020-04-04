@@ -89,64 +89,10 @@ export class ConfirmDialogDemo &#123;
                     </thead>
                     <tbody>
                         <tr>
-                            <td>message</td>
-                            <td>string</td>
-                            <td>null</td>
-                            <td>Message of the confirmation.</td>
-                        </tr>
-                        <tr>
-                            <td>key</td>
-                            <td>string</td>
-                            <td>null</td>
-                            <td>Optional key to match the key of the confirm dialog, necessary to use when component tree has multiple confirm dialogs.</td>
-                        </tr>
-                        <tr>
-                            <td>icon</td>
-                            <td>string</td>
-                            <td>null</td>
-                            <td>Icon to display next to the message.</td>
-                        </tr>
-                        <tr>
-                            <td>header</td>
-                            <td>string</td>
-                            <td>null</td>
-                            <td>Header text of the dialog.</td>
-                        </tr>
-                        <tr>
                             <td>accept</td>
                             <td>Function</td>
                             <td>null</td>
                             <td>Callback to execute when action is confirmed.</td>
-                        </tr>
-                        <tr>
-                            <td>reject</td>
-                            <td>Function</td>
-                            <td>null</td>
-                            <td>Callback to execute when action is rejected.</td>
-                        </tr>
-                        <tr>
-                            <td>acceptLabel</td>
-                            <td>string</td>
-                            <td>null</td>
-                            <td>Label of the accept button.</td>
-                        </tr>
-                        <tr>
-                            <td>rejectLabel</td>
-                            <td>string</td>
-                            <td>null</td>
-                            <td>Label of the reject button.</td>
-                        </tr>
-                        <tr>
-                            <td>acceptIcon</td>
-                            <td>string</td>
-                            <td>null</td>
-                            <td>Icon of the accept button.</td>
-                        </tr>
-                        <tr>
-                            <td>rejectIcon</td>
-                            <td>string</td>
-                            <td>null</td>
-                            <td>Icon of the reject button.</td>
                         </tr>
                         <tr>
                             <td>acceptButtonStyleClass</td>
@@ -155,16 +101,88 @@ export class ConfirmDialogDemo &#123;
                             <td>Style class of the accept button.</td>
                         </tr>
                         <tr>
-                            <td>rejectButtonStyleClass</td>
+                            <td>acceptIcon</td>
                             <td>string</td>
                             <td>null</td>
-                            <td>Style class of the reject button.</td>
+                            <td>Icon of the accept button.</td>
+                        </tr>
+                        <tr>
+                            <td>acceptLabel</td>
+                            <td>string</td>
+                            <td>null</td>
+                            <td>Label of the accept button.</td>
                         </tr>
                         <tr>
                             <td>acceptVisible</td>
                             <td>boolean</td>
                             <td>true</td>
                             <td>Visibility of the accept button.</td>
+                        </tr>
+                        <tr>
+                            <td>blockScroll</td>
+                            <td>boolean</td>
+                            <td>true</td>
+                            <td>Whether background scroll should be blocked when dialog is visible.</td>
+                        </tr>
+                        <tr>
+                            <td>defaultFocus</td>
+                            <td>string</td>
+                            <td>accept</td>
+                            <td>Element to receive the focus when the dialog gets visible, valid values are "accept", "reject", "close" and "none".</td>
+                        </tr>
+                        <tr>
+                            <td>header</td>
+                            <td>string</td>
+                            <td>null</td>
+                            <td>Header text of the dialog.</td>
+                        </tr>
+                        <tr>
+                            <td>icon</td>
+                            <td>string</td>
+                            <td>null</td>
+                            <td>Icon to display next to the message.</td>
+                        </tr>
+                        <tr>
+                            <td>key</td>
+                            <td>string</td>
+                            <td>null</td>
+                            <td>Optional key to match the key of the confirm dialog, necessary to use when component tree has multiple confirm dialogs.</td>
+                        </tr>
+                        <tr>
+                            <td>maskStyleClass</td>
+                            <td>string</td>
+                            <td>null</td>
+                            <td>Style class of the mask.</td>
+                        </tr>
+                        <tr>
+                            <td>message</td>
+                            <td>string</td>
+                            <td>null</td>
+                            <td>Message of the confirmation.</td>
+                        </tr>
+                        <tr>
+                            <td>reject</td>
+                            <td>Function</td>
+                            <td>null</td>
+                            <td>Callback to execute when action is rejected.</td>
+                        </tr>
+                        <tr>
+                            <td>rejectButtonStyleClass</td>
+                            <td>string</td>
+                            <td>null</td>
+                            <td>Style class of the reject button.</td>
+                        </tr>
+                        <tr>
+                            <td>rejectIcon</td>
+                            <td>string</td>
+                            <td>null</td>
+                            <td>Icon of the reject button.</td>
+                        </tr>
+                        <tr>
+                            <td>rejectLabel</td>
+                            <td>string</td>
+                            <td>null</td>
+                            <td>Label of the reject button.</td>
                         </tr>
                         <tr>
                             <td>rejectVisible</td>
@@ -183,24 +201,6 @@ export class ConfirmDialogDemo &#123;
                             <td>string</td>
                             <td>null</td>
                             <td>Style class of the component.</td>
-                        </tr>
-                        <tr>
-                            <td>maskStyleClass</td>
-                            <td>string</td>
-                            <td>null</td>
-                            <td>Style class of the mask.</td>
-                        </tr>
-                        <tr>
-                            <td>blockScroll</td>
-                            <td>boolean</td>
-                            <td>true</td>
-                            <td>Whether background scroll should be blocked when dialog is visible.</td>
-                        </tr>
-                        <tr>
-                            <td>defaultFocus</td>
-                            <td>string</td>
-                            <td>accept</td>
-                            <td>Element to receive the focus when the dialog gets visible, valid values are "accept", "reject", "close" and "none".</td>
                         </tr>
                     </tbody>
                 </table>
@@ -271,89 +271,29 @@ export class ConfirmDialogDemo &#123;
                         </tr>
                     </thead>
                     <tbody>
-                         <tr>
-                            <td>header</td>
+                        <tr>
+                            <td>acceptButtonStyleClass</td>
                             <td>string</td>
-                            <td>null</td>
-                            <td>Title text of the dialog.</td>
-                         </tr>
-                         <tr>
-                           <td>message</td>
-                           <td>string</td>
-                           <td>null</td>
-                           <td>Message of the confirmation.</td>
+                            <td>ui-confirmdialog-acceptbutton</td>
+                            <td>Style class of the accept button.</td>
                         </tr>
                         <tr>
-                            <td>key</td>
+                            <td>acceptIcon</td>
                             <td>string</td>
-                            <td>null</td>
-                            <td>Optional key to match the key of confirm object, necessary to use when component tree has multiple confirm dialogs.</td>
+                            <td>pi pi-check</td>
+                            <td>Icon of the accept button.</td>
                         </tr>
                         <tr>
-                          <td>icon</td>
-                          <td>string</td>
-                          <td>null</td>
-                          <td>Icon to display next to message.</td>
+                            <td>acceptLabel</td>
+                            <td>string</td>
+                            <td>Yes</td>
+                            <td>Label of the accept button.</td>
                         </tr>
                         <tr>
-                          <td>acceptLabel</td>
-                          <td>string</td>
-                          <td>Yes</td>
-                          <td>Label of the accept button.</td>
-                        </tr>
-                        <tr>
-                          <td>acceptIcon</td>
-                          <td>string</td>
-                          <td>pi pi-check</td>
-                          <td>Icon of the accept button.</td>
-                        </tr>
-                        <tr>
-                          <td>acceptVisible</td>
-                          <td>boolean</td>
-                          <td>true</td>
-                          <td>Visibility of the accept button.</td>
-                        </tr>
-                        <tr>
-                          <td>rejectLabel</td>
-                          <td>string</td>
-                          <td>No</td>
-                          <td>Label of the reject button.</td>
-                        </tr>
-                        <tr>
-                          <td>rejectIcon</td>
-                          <td>string</td>
-                          <td>pi pi-times</td>
-                          <td>Icon of the reject button.</td>
-                        </tr>
-                        <tr>
-                          <td>rejectVisible</td>
-                          <td>boolean</td>
-                          <td>true</td>
-                          <td>Visibility of the reject button.</td>
-                        </tr>
-                        <tr>
-                            <td>closeOnEscape</td>
+                            <td>acceptVisible</td>
                             <td>boolean</td>
                             <td>true</td>
-                            <td>Specifies if pressing escape key should hide the dialog.</td>
-                        </tr>
-                        <tr>
-                            <td>rtl</td>
-                            <td>boolean</td>
-                            <td>false</td>
-                            <td>When enabled dialog is displayed in RTL direction.</td>
-                        </tr>
-                        <tr>
-                            <td>closable</td>
-                            <td>boolean</td>
-                            <td>true</td>
-                            <td>Adds a close icon to the header to hide the dialog.</td>
-                        </tr>
-                        <tr>
-                            <td>focusTrap</td>
-                            <td>boolean</td>
-                            <td>true</td>
-                            <td>When enabled, can only focus on elements inside the confirm dialog.</td>
+                            <td>Visibility of the accept button.</td>
                         </tr>
                         <tr>
                             <td>appendTo</td>
@@ -362,16 +302,10 @@ export class ConfirmDialogDemo &#123;
                             <td>Target element to attach the dialog, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name).</td>
                         </tr>
                         <tr>
-                            <td>acceptButtonStyleClass</td>
-                            <td>string</td>
-                            <td>ui-confirmdialog-acceptbutton</td>
-                            <td>Style class of the accept button.</td>
-                        </tr>
-                        <tr>
-                            <td>rejectButtonStyleClass</td>
-                            <td>string</td>
-                            <td>ui-confirmdialog-rejectbutton</td>
-                            <td>Style class of the reject button.</td>
+                            <td>autoZIndex</td>
+                            <td>boolean</td>
+                            <td>true</td>
+                            <td>Whether to automatically manage layering.</td>
                         </tr>
                         <tr>
                             <td>baseZIndex</td>
@@ -380,22 +314,88 @@ export class ConfirmDialogDemo &#123;
                             <td>Base zIndex value to use in layering.</td>
                         </tr>
                         <tr>
-                            <td>autoZIndex</td>
+                            <td>closable</td>
                             <td>boolean</td>
                             <td>true</td>
-                            <td>Whether to automatically manage layering.</td>
+                            <td>Adds a close icon to the header to hide the dialog.</td>
                         </tr>
                         <tr>
-                            <td>transitionOptions</td>
-                            <td>string</td>
-                            <td>400ms cubic-bezier(0.25, 0.8, 0.25, 1)</td>
-                            <td>Transition options of the animation.</td>
+                            <td>closeOnEscape</td>
+                            <td>boolean</td>
+                            <td>true</td>
+                            <td>Specifies if pressing escape key should hide the dialog.</td>
                         </tr>
                         <tr>
                             <td>defaultFocus</td>
                             <td>string</td>
                             <td>accept</td>
                             <td>Element to receive the focus when the dialog gets visible, valid values are "accept", "reject", "close" and "none".</td>
+                        </tr>
+                        <tr>
+                            <td>focusTrap</td>
+                            <td>boolean</td>
+                            <td>true</td>
+                            <td>When enabled, can only focus on elements inside the confirm dialog.</td>
+                        </tr>
+                        <tr>
+                            <td>header</td>
+                            <td>string</td>
+                            <td>null</td>
+                            <td>Title text of the dialog.</td>
+                        </tr>
+                        <tr>
+                            <td>icon</td>
+                            <td>string</td>
+                            <td>null</td>
+                            <td>Icon to display next to message.</td>
+                        </tr>
+                        <tr>
+                            <td>key</td>
+                            <td>string</td>
+                            <td>null</td>
+                            <td>Optional key to match the key of confirm object, necessary to use when component tree has multiple confirm dialogs.</td>
+                        </tr>
+                        <tr>
+                           <td>message</td>
+                           <td>string</td>
+                           <td>null</td>
+                           <td>Message of the confirmation.</td>
+                        </tr>
+                        <tr>
+                            <td>rejectButtonStyleClass</td>
+                            <td>string</td>
+                            <td>ui-confirmdialog-rejectbutton</td>
+                            <td>Style class of the reject button.</td>
+                        </tr>
+                        <tr>
+                            <td>rejectIcon</td>
+                            <td>string</td>
+                            <td>pi pi-times</td>
+                            <td>Icon of the reject button.</td>
+                        </tr>
+                        <tr>
+                            <td>rejectLabel</td>
+                            <td>string</td>
+                            <td>No</td>
+                            <td>Label of the reject button.</td>
+                        </tr>
+                        <tr>
+                            <td>rejectVisible</td>
+                            <td>boolean</td>
+                            <td>true</td>
+                            <td>Visibility of the reject button.</td>
+                        </tr>
+                        <tr>
+                            <td>rtl</td>
+                            <td>boolean</td>
+                            <td>false</td>
+                            <td>When enabled dialog is displayed in RTL direction.</td>
+                        </tr>
+                        <tr>
+                            <td>transitionOptions</td>
+                            <td>string</td>
+                            <td>400ms cubic-bezier(0.25, 0.8, 0.25, 1)</td>
+                            <td>Transition options of the animation.</td>
                         </tr>
                     </tbody>
                 </table>

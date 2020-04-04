@@ -211,16 +211,58 @@ export class CarouselDemo &#123;
                     </thead>
                     <tbody>
                         <tr>
-                            <td>value</td>
-                            <td>array</td>
+                            <td>autoplayInterval</td>
+                            <td>number</td>
                             <td>null</td>
-                            <td>An array of objects to display.</td>
+                            <td>Time in milliseconds to scroll items automatically.</td>
+                        </tr>
+                        <tr>
+                            <td>circular</td>
+                            <td>boolean</td>
+                            <td>false</td>
+                            <td>Defines if scrolling would be infinite.</td>
+                        </tr>
+                        <tr>
+                            <td>contentClass</td>
+                            <td>string</td>
+                            <td>null</td>
+                            <td>Style class of main content.</td>
+                        </tr>
+                        <tr>
+                            <td>dotsContainerClass</td>
+                            <td>string</td>
+                            <td>null</td>
+                            <td>Style class of the paginator items.</td>
+                        </tr>
+                        <tr>
+                            <td>numScroll</td>
+                            <td>number</td>
+                            <td>1</td>
+                            <td>Number of items to scroll.</td>
+                        </tr>
+                        <tr>
+                            <td>numVisible</td>
+                            <td>number</td>
+                            <td>1</td>
+                            <td>Number of items per page.</td>
+                        </tr>
+                        <tr>
+                            <td>orientation</td>
+                            <td>string</td>
+                            <td>horizontal</td>
+                            <td>Specifies the layout of the component, valid values are "horizontal" and "vertical".</td>
                         </tr>
                         <tr>
                             <td>page</td>
                             <td>number</td>
                             <td>null</td>
                             <td>Index of the first item.</td>
+                        </tr>
+                        <tr>
+                            <td>responsiveOptions</td>
+                            <td>any</td>
+                            <td>null</td>
+                            <td>An array of options for responsive design.</td>
                         </tr>
                         <tr>
                             <td>style</td>
@@ -235,58 +277,16 @@ export class CarouselDemo &#123;
                             <td>Style class of the viewport container.</td>
                         </tr>
                         <tr>
-                            <td>circular</td>
-                            <td>boolean</td>
-                            <td>false</td>
-                            <td>Defines if scrolling would be infinite.</td>
-                        </tr>
-                        <tr>
-                            <td>autoplayInterval</td>
-                            <td>number</td>
+                            <td>value</td>
+                            <td>array</td>
                             <td>null</td>
-                            <td>Time in milliseconds to scroll items automatically.</td>
-                        </tr>
-                        <tr>
-                            <td>numVisible</td>
-                            <td>number</td>
-                            <td>1</td>
-                            <td>Number of items per page.</td>
-                        </tr>
-                        <tr>
-                            <td>numScroll</td>
-                            <td>number</td>
-                            <td>1</td>
-                            <td>Number of items to scroll.</td>
-                        </tr>
-                        <tr>
-                            <td>responsiveOptions</td>
-                            <td>any</td>
-                            <td>null</td>
-                            <td>An array of options for responsive design.</td>
-                        </tr>
-                        <tr>
-                            <td>orientation</td>
-                            <td>string</td>
-                            <td>horizontal</td>
-                            <td>Specifies the layout of the component, valid values are "horizontal" and "vertical".</td>
+                            <td>An array of objects to display.</td>
                         </tr>
                         <tr>
                             <td>verticalViewPortHeight</td>
                             <td>string</td>
                             <td>300px</td>
                             <td>Height of the viewport in vertical layout.</td>
-                        </tr>
-                        <tr>
-                            <td>contentClass</td>
-                            <td>string</td>
-                            <td>null</td>
-                            <td>Style class of main content.</td>
-                        </tr>
-                        <tr>
-                            <td>dotsContainerClass</td>
-                            <td>string</td>
-                            <td>null</td>
-                            <td>Style class of the paginator items.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -311,6 +311,7 @@ export class CarouselDemo &#123;
                     </tbody>
                 </table>
             </div>
+            
             <h3>Styling</h3>
             <p>Following is the list of structural style classes, for theming classes visit <a href="#" [routerLink]="['/theming']">theming page</a>.</p>
             <div class="doc-tablewrapper">
